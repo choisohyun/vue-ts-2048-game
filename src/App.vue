@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div>
+    <header></header>
+    <grid-item></grid-item>
+    <footer></footer>
+  </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import Vue from "vue";
+import Component from "vue-class-component";
+import Header from "@/components/Header.vue";
+import GridItem from "@/components/GridTable/GridItem.vue";
+import Footer from "@/components/Footer.vue";
 
-@Options({
+@Component({
   components: {
-    HelloWorld
-  }
+    Header,
+    GridItem,
+    Footer,
+  },
 })
 export default class App extends Vue {}
 </script>
