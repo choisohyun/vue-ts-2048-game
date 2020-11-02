@@ -1,13 +1,9 @@
-<template>
-$END$
-</template>
+<template> </template>
 
 <script>
-export default {
-name: "GridItem"
-}
+import { Vue } from "vue-property-decorator";
+
+export default class GridItem extends Vue {}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

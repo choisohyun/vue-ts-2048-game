@@ -1,13 +1,22 @@
 <template>
-$END$
+  <header>
+    <h1 class="title">2048</h1>
+    <div class="score-container">
+      <score-container />
+    </div>
+  </header>
 </template>
 
 <script>
-export default {
-name: "Header"
-}
+import { Vue, Component } from "vue-property-decorator";
+import ScoreContainer from "@/components/Container/ScoreContainer";
+
+@Component({
+  components: {
+    ScoreContainer,
+  },
+})
+export default class Header extends Vue {}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
