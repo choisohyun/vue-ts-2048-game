@@ -1,6 +1,8 @@
-<template> </template>
+<template>
+  <div>o</div>
+</template>
 
-<script>
+<script lang="ts">
 import { Vue } from "vue-property-decorator";
 
 export default class GridItem extends Vue {}
