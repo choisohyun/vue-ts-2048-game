@@ -10,15 +10,15 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 import HeaderItem from "@/components/HeaderItem.vue";
-import GridTable from "@/components/GridTable/GridTable.vue";
+import GridTable from "@/components/gridTable/GridTable.vue";
 import FooterItem from "@/components/FooterItem.vue";
 
 @Component({
   components: {
     HeaderItem,
     GridTable,
-    FooterItem
-  }
+    FooterItem,
+  },
 })
 export default class App extends Vue {}
 </script>
