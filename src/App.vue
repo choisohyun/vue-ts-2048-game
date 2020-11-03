@@ -1,24 +1,24 @@
 <template>
-  <div>
-    <header></header>
-    <grid-item></grid-item>
-    <footer></footer>
+  <div id="app">
+    <header-item></header-item>
+    <grid-table></grid-table>
+    <footer-item></footer-item>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
-import Header from "@/components/Header.vue";
-import GridItem from "@/components/GridTable/GridItem.vue";
-import Footer from "@/components/Footer.vue";
+import HeaderItem from "@/components/HeaderItem.vue";
+import GridTable from "@/components/GridTable/GridTable.vue";
+import FooterItem from "@/components/FooterItem.vue";
 
 @Component({
   components: {
-    Header,
-    GridItem,
-    Footer,
-  },
+    HeaderItem,
+    GridTable,
+    FooterItem
+  }
 })
 export default class App extends Vue {}
 </script>
