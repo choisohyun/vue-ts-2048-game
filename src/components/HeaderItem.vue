@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header class="header">
     <h1 class="title">2048</h1>
     <div class="score-container">
       <score-container
@@ -9,7 +9,7 @@
         :score="item.score"
       />
     </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
@@ -21,7 +21,7 @@ import ScoreContainer from "@/components/Container/ScoreContainer.vue";
     ScoreContainer
   }
 })
-export default class Header extends Vue {
+export default class HeaderItem extends Vue {
   private scoreData = [
     { title: "SCORE", score: 0 },
     { title: "BEST", score: 0 }
@@ -29,4 +29,16 @@ export default class Header extends Vue {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.title {
+  font-size: 2.5rem;
+}
+.score-container {
+  display: flex;
+}
+</style>
