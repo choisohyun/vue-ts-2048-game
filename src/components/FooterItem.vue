@@ -1,6 +1,8 @@
-<template> </template>
+<template>
+  <div>footer</div>
+</template>
 
-<script>
+<script lang="ts">
 import { Vue } from "vue-property-decorator";
 
 export default class Footer extends Vue {}
